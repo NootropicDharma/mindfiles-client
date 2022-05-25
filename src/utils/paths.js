@@ -1,0 +1,14 @@
+export const HOMEPAGE = "/";
+export const SIGNUPPAGE = "/auth/signup";
+export const LOGINPAGE = "/auth/login";
+export const PROTECTEDPAGE = "/protected";
+export const ALLPROJECTS = "/allpalaces";
+export const PROJECTBYID = "/palaces/:id";
+export const PROJECTNEW = "/new";
+export const PROJECTEDIT = "/edit/:id";
+export const PROFILEPAGE = "/profile";
+export const CREATENOTE = "/createnote";
+export const CREATEMEMORY = "/creatememory";
+export const CREATEROOM = "/createroom"
+export const ROOMS = "/userrooms";
+export const PAGE404 = "*";
