@@ -46,7 +46,7 @@ import {
 
     function handleSubmit(event) {
     // console.log({title,description, roomId})
-      axios.post(`${process.env.REACT_APP_SERVER_URL}/newroommemory`, {title,description,roomId: Id}) //como es post recibe un segunto parametro data 
+      axios.post(`${process.env.REACT_APP_SERVER_URL}/newroommemory`, {title,description,roomId: roomid}) //como es post recibe un segunto parametro data 
     .then( nuevoProjecto => {
         navigate('/allpalaces')
     })
@@ -106,8 +106,8 @@ import {
             <select placeholder="Seleccionar room" onChange={(event) => setroomId(event.target.value) } >
                 <option>Selecciona tu room</option>
                 { 
-                    rooms.map( room => {
-                        return <option value={room._id} key={room._id}>{room.title}</option>
+                    rooms.map( roomi => {
+                        return <option value={roomi._id} key={roomi._id}>{roomi.title}</option>
                     })
                 }
             </select>

@@ -50,7 +50,7 @@ import {
           p={6}
           my={12}>
           <Heading lineHeight={1.1} fontSize={{ base: '2xl', md: '3xl' }}>
-            New Project
+            New Palace
           </Heading>
           <FormControl id="title" isRequired>
             <FormLabel>Title</FormLabel>
@@ -62,16 +62,7 @@ import {
               onChange={(evento)=> setTitle(evento.target.value)}
             />
           </FormControl>
-          <FormControl id="rooms" isRequired>
-            <FormLabel>id</FormLabel>
-            <Input 
-            placeholder="agrega tu descripcion" 
-            type="text"
-            value={userId}
-            onChange={(evento)=> setId(evento.target.value)}
-            />
-              
-          </FormControl>
+          
           <Stack spacing={6}>
             <Button
               bg={'blue.400'}

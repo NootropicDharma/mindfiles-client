@@ -1,6 +1,10 @@
 table {
-    font-family: "Helvetica Neue", Helvetica, sans-serif
-    
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    position: absolute;
+    left: -190px;
+    top: 100px;
+
+
   }
   
   caption {
@@ -8,7 +12,7 @@ table {
     color: black;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 5px;
+    padding: 2px;
   }
   
   thead {
@@ -19,7 +23,7 @@ table {
   
   th,
   td {
-    padding: 10px 70px;
+    padding: 10px 100px;
     
   }
   

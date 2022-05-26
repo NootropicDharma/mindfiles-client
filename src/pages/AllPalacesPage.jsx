@@ -5,20 +5,10 @@ import './AllPalacesPage.css'
 
 function AllPalacesPage(props) {
 console.log(props)
-    // const [palaces, setPalaces] = useState([])
-
-    // // useEffect(()=>{
-    // //     axios.get(`${process.env.REACT_APP_SERVER_URL}/user`)
-    // //     .then(misdatos =>{
-    // //         console.log(misdatos.data)
-    // //         setPalaces(misdatos.data)
-    // //     })
-    // //     .catch(err => console.log(err))
-    // // }, [])
 
 
     return (
-    <div className='grid'> MIND Palaces
+    <div className=''> MIND Palaces
         {
         props.user?.palaces.map (dato => {
             console.log(dato)

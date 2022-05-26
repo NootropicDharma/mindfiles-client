@@ -22,7 +22,7 @@ import {
     const [When, setWhen] = useState('')
     const [Who, setWho] = useState('')
     
-    const [Id, setId] = useState("")
+    const [Id, setId] = useState('')
     const [roomId, setroomId] = useState('')
     const [memoryId, setmemoryId] = useState('')
 
@@ -58,7 +58,7 @@ import {
             setMemories(memories.data)
             
         })
-        console.log('obtener las memories del ROOMID' )
+        console.log('obtener las memories del ROOMID')
     },[roomId])
 
     
@@ -66,7 +66,7 @@ import {
 
     function handleSubmit(event) {
     // console.log({title,description, roomId})
-      axios.post(`${process.env.REACT_APP_SERVER_URL}/newroommemory`, {BookTitle,Pages,What,Where,When,Who,memoryId: Id}) //como es post recibe un segunto parametro data 
+      axios.post(`${process.env.REACT_APP_SERVER_URL}/newmemorynote`, {BookTitle,Pages,What,Where,When,Who, memoryId}) //como es post recibe un segunto parametro data 
     .then( nuevoProjecto => {
         navigate('/allpalaces')
     })

@@ -41,7 +41,7 @@ const DetailPage = (props) => {
     const toast = useToast()
     const navigate = useNavigate()
     const {user} = props
-    console.log(props)
+    console.log('que hay' ,user)
     
     useEffect (()=>{
         axios.get(`${process.env.REACT_APP_SERVER_URL}/palaces/${id}`)
@@ -88,95 +88,156 @@ const DetailPage = (props) => {
                 zIndex="2"
                 marginLeft={{ base: '0', sm: '5%' }}
                 marginTop="5%">
-                {/* <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                  <Image
-                    borderRadius="lg"
-                    src={
-                      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRycmM_uUD4aZ5wrQDffQw3DB-aNXReqPdhQw&usqp=CAU'
-                    }
-                    alt="some good alt text"
-                    objectFit="contain"
-                  />
-                </Link> */}
                 <table>
           <caption>{user?.palaces[0]?.title}</caption>
+{/* 
+        {
+          user.user?.map( (info) => {
+            console.log('el mapeo',info)
+            return <div>
+                      <tbody>
+                      <tr>
+                      <td>{info.palaces}</td>
+                      <td>{}</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      </tr>
+                      </tbody>
+                  </div>
+          })
+        } */}
+
+
           <thead>
             <tr>
-        <th>Rooms</th>
-        <th>Room number</th>
+        <th>No.</th>
+        <th>Room type</th>
         <th>Memory</th>
         <th>Note</th>
-        <th>description</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-        <td>laundry room</td>
         <td>1</td>
-        <td></td>
-        <td></td>
+        <td>{user?.palaces[0]?.rooms[0]?.title}</td>
+        <td>
+        {user?.palaces[0]?.rooms[0]?.memories[0]?.title}
+        {user?.palaces[0]?.rooms[0]?.memories[1]?.title}
+        {user?.palaces[0]?.rooms[0]?.memories[2]?.title}
+        {user?.palaces[0]?.rooms[0]?.memories[3]?.title}
+        {user?.palaces[0]?.rooms[0]?.memories[4]?.title}
+        {user?.palaces[0]?.rooms[0]?.memories[5]?.title}
+        </td>
+        <td>{user?.palaces[0]?.rooms[0]?.memories[0]?.notes[0]}</td>
         <td></td>
             </tr>
             <tr>
-        <td>dogs house</td>
         <td>2</td>
-        <td></td>
-        <td></td>
+        <td>{user?.palaces[0]?.rooms[1]?.title}</td>
+        <td>
+        {user?.palaces[0]?.rooms[1]?.memories[0]?.title}
+        {user?.palaces[0]?.rooms[1]?.memories[1]?.title}
+        {user?.palaces[0]?.rooms[1]?.memories[2]?.title}
+        {user?.palaces[0]?.rooms[1]?.memories[3]?.title}
+        {user?.palaces[0]?.rooms[1]?.memories[4]?.title}
+        {user?.palaces[0]?.rooms[1]?.memories[5]?.title}
+        </td>
         <td></td>
             </tr>
             <tr>
-        <td>Dad's room</td>
         <td>3</td>
-        <td></td>
-        <td></td>
+        <td>{user?.palaces[0]?.rooms[2]?.title}</td>
+        {user?.palaces[0]?.rooms[2]?.memories[0]?.title}
+        {user?.palaces[0]?.rooms[2]?.memories[1]?.title}
+        {user?.palaces[0]?.rooms[2]?.memories[2]?.title}
+        {user?.palaces[0]?.rooms[2]?.memories[3]?.title}
+        {user?.palaces[0]?.rooms[2]?.memories[4]?.title}
+        {user?.palaces[0]?.rooms[2]?.memories[5]?.title}
+        {/* <td>{user?.palaces[0]?.rooms[2]?.memories[0]?.notes[0]}</td> */}
         <td></td>
             </tr>
             <tr>
-        <td>Backyard</td>
         <td>4</td>
-        <td></td>
+        <td>{user?.palaces[0]?.rooms[3]?.title}</td>
+        {user?.palaces[0]?.rooms[3]?.memories[0]?.title}
+        {user?.palaces[0]?.rooms[3]?.memories[1]?.title}
+        {user?.palaces[0]?.rooms[3]?.memories[2]?.title}
+        {user?.palaces[0]?.rooms[3]?.memories[3]?.title}
+        {user?.palaces[0]?.rooms[3]?.memories[4]?.title}
+        {user?.palaces[0]?.rooms[3]?.memories[5]?.title}
         <td></td>
         <td></td>
             </tr>
             <tr>
-        <td>Babies room</td>
         <td>5</td>
-        <td></td>
+        <td>{user?.palaces[0]?.rooms[4]?.title}</td>
+        {user?.palaces[0]?.rooms[4]?.memories[0]?.title}
+        {user?.palaces[0]?.rooms[4]?.memories[1]?.title}
+        {user?.palaces[0]?.rooms[4]?.memories[2]?.title}
+        {user?.palaces[0]?.rooms[4]?.memories[3]?.title}
+        {user?.palaces[0]?.rooms[4]?.memories[4]?.title}
+        {user?.palaces[0]?.rooms[4]?.memories[5]?.title}
         <td></td>
         <td></td>
             </tr>
             <tr>
-        <td>Camp</td>
         <td>6</td>
-        <td></td>
+        <td>{user?.palaces[0]?.rooms[5]?.title}</td>
+        {user?.palaces[0]?.rooms[5]?.memories[0]?.title}
+        {user?.palaces[0]?.rooms[5]?.memories[1]?.title}
+        {user?.palaces[0]?.rooms[5]?.memories[2]?.title}
+        {user?.palaces[0]?.rooms[5]?.memories[3]?.title}
+        {user?.palaces[0]?.rooms[5]?.memories[4]?.title}
+        {user?.palaces[0]?.rooms[5]?.memories[5]?.title}
         <td></td>
         <td></td>
             </tr>
             <tr>
-        <td>Storage</td>
         <td>7</td>
-        <td></td>
+        <td>{user?.palaces[0]?.rooms[6]?.title}</td>
+        {user?.palaces[0]?.rooms[6]?.memories[0]?.title}
+        {user?.palaces[0]?.rooms[6]?.memories[1]?.title}
+        {user?.palaces[0]?.rooms[6]?.memories[2]?.title}
+        {user?.palaces[0]?.rooms[6]?.memories[3]?.title}
+        {user?.palaces[0]?.rooms[6]?.memories[4]?.title}
+        {user?.palaces[0]?.rooms[6]?.memories[5]?.title}
         <td></td>
         <td></td>
             </tr>
             <tr>
-        <td>Bathroom</td>
         <td>8</td>
-        <td></td>
+        <td>{user?.palaces[0]?.rooms[7]?.title}</td>
+        {user?.palaces[0]?.rooms[7]?.memories[0]?.title}
+        {user?.palaces[0]?.rooms[7]?.memories[1]?.title}
+        {user?.palaces[0]?.rooms[7]?.memories[2]?.title}
+        {user?.palaces[0]?.rooms[7]?.memories[3]?.title}
+        {user?.palaces[0]?.rooms[7]?.memories[4]?.title}
+        {user?.palaces[0]?.rooms[7]?.memories[5]?.title}
         <td></td>
         <td></td>
             </tr>
             <tr>
-        <td>Livingroom</td>
         <td>9</td>
-        <td></td>
+        <td>{user?.palaces[0]?.rooms[8]?.title}</td>
+        {user?.palaces[0]?.rooms[8]?.memories[0]?.title}
+        {user?.palaces[0]?.rooms[8]?.memories[1]?.title}
+        {user?.palaces[0]?.rooms[8]?.memories[2]?.title}
+        {user?.palaces[0]?.rooms[8]?.memories[3]?.title}
+        {user?.palaces[0]?.rooms[8]?.memories[4]?.title}
+        {user?.palaces[0]?.rooms[8]?.memories[5]?.title}
         <td></td>
         <td></td>
             </tr>
             <tr>
-        <td>Kitchen</td>
         <td>10</td>
-        <td></td>
+        <td>{user?.palaces[0]?.rooms[9]?.title}</td>
+        {user?.palaces[0]?.rooms[9]?.memories[0]?.title}
+        {user?.palaces[0]?.rooms[9]?.memories[1]?.title}
+        {user?.palaces[0]?.rooms[9]?.memories[2]?.title}
+        {user?.palaces[0]?.rooms[9]?.memories[3]?.title}
+        {user?.palaces[0]?.rooms[9]?.memories[4]?.title}
+        {user?.palaces[0]?.rooms[9]?.memories[5]?.title}
         <td></td>
         <td></td>
             </tr>
