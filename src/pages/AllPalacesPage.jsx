@@ -1,6 +1,7 @@
 // import axios from 'axios'
 // import { useState, useEffect } from 'react'
 import Card from '../components/Card'
+import './AllPalacesPage.css'
 
 function AllPalacesPage(props) {
 console.log(props)
@@ -17,7 +18,7 @@ console.log(props)
 
 
     return (
-    <div> MIND Palaces
+    <div className='grid'> MIND Palaces
         {
         props.user?.palaces.map (dato => {
             console.log(dato)

@@ -29,9 +29,9 @@ export default function SmallCentered() {
         align={'center'}>
         
         <Stack direction={'row'} spacing={6}>
-        <Link href={'#'}>About</Link>
-        <Link href={'#'}>The science</Link>
-        <Link href={'https://www.linkedin.com/in/david-flores-9b0744236/'}>Contact</Link>
+        <Link href={'/science-loci'}>The Loci Technique</Link>
+        <Link href={'/science-ras'}>RAS - The science</Link>
+        <Link href={'https://www.linkedin.com/in/david-flores-9b0744236/'}>Contact us</Link>
         </Stack>
         </Container>
         

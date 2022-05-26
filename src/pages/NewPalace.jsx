@@ -17,13 +17,13 @@ import {
     console.log(props)
     const [title, setTitle] = useState('')
     const [userId, setId] = useState('')
-    
+    const {id} = useParams()
 
     const navigate = useNavigate() // para redireccionar , conviertes en una constante 
 
     function handleSubmit(event) {
       console.log({title, userId})
-      axios.post("http://localhost:5005/api/userpalacenew", {title, user: userId}) //como es post recibe un segunto parametro data 
+      axios.post("http://localhost:5005/api/userpalacenew", {title, userId: props.user?._id}) //como es post recibe un segunto parametro data 
       .then( nuevoProjecto => {
         navigate('/allpalaces')
       })

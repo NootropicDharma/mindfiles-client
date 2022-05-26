@@ -8,3 +8,15 @@
     align-items:flex-end;
     justify-content:baseline;
 }
+
+.border {
+    border:1px solid black;
+}
+
+.main {
+    background: url('/public/images/getty_494562134_260336.jpeg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

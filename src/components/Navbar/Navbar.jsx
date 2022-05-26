@@ -54,11 +54,11 @@ window.addEventListener('resize', showButton);
             <Link to={PATHS.ALLPROJECTS} className="authLink">
               <boton>My Palaces</boton>
             </Link>
+              <button className="nav-logoutbtn" onClick={props.handleLogout}>
+                Logout
+              </button>
             {/* Ideally, only the box should be used. The <Flex /> is used to style the preview. */}
 
-            <button className="nav-logoutbtn" onClick={props.handleLogout}>
-              Logout
-            </button>
             <Flex
               justifyContent="center"
               alignItems="flex-end"

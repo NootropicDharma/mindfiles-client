@@ -11,9 +11,12 @@ import EditPage from "../pages/EditPage";
 import NotFoundPage from "../pages/NotFoundPage";
 import Profile from "../pages/Profile";
 import Rooms from "../pages/Rooms";
-import PalacePage from "../pages/PalacePage";
+import CreateNote from "../pages/CreateNote";
 import CreateMemoryPage from "../pages/CreateMemoryPage";
 import CreateRoomPage from "../pages/CreateRoomPage";
+import SciencePage from "../pages/SciencePage";
+import SciencePage2 from "../pages/Science2";
+
 
 const routes = (props) => {
   const { user } = props;
@@ -57,7 +60,7 @@ const routes = (props) => {
     },
     {
       path: PATHS.CREATENOTE,
-      element: <PalacePage {...props} />,
+      element: <CreateNote {...props} />,
     },
     {
       path: PATHS.CREATEMEMORY,
@@ -66,6 +69,18 @@ const routes = (props) => {
     {
       path: PATHS.CREATEROOM,
       element: <CreateRoomPage {...props} />,
+    },
+    {
+      path: PATHS.SCIENCE,
+      element: <SciencePage {...props} />,
+    },
+    {
+      path: PATHS.SCIENCE2,
+      element: <SciencePage2 {...props} />,
+    },
+    {
+      path: PATHS.CREATEPALACE,
+      element: <NewPalace {...props} />,
     },
     {
       path: PATHS.PAGE404,

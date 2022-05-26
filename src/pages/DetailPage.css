@@ -1,0 +1,64 @@
+table {
+    font-family: "Helvetica Neue", Helvetica, sans-serif
+    
+  }
+  
+  caption {
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px;
+  }
+  
+  thead {
+    background: SteelBlue;
+    color: white;
+    
+  }
+  
+  th,
+  td {
+    padding: 10px 70px;
+    
+  }
+  
+  tbody tr:nth-child(even) {
+    background: WhiteSmoke;
+    
+  }
+  
+  tbody tr td:nth-child(2) {
+    text-align:center;
+    
+    
+  }
+  tbody tr td:nth-child(1) {
+    text-align:center;
+    background-color: aqua;
+    
+  }
+  
+  tbody tr td:nth-child(3),
+  tbody tr td:nth-child(4) {
+    text-align: right;
+    font-family: monospace;
+    
+    
+  }
+  
+  tfoot {
+    background: SeaGreen;
+    color: white;
+    text-align: right;
+    
+  }
+  
+  tfoot tr th:last-child {
+    font-family: monospace;
+    
+  }
+  
+  .capi{
+    background-color:whitesmoke;
+  }
