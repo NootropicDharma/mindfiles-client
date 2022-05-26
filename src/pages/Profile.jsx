@@ -23,7 +23,7 @@ const Profile = (props) => {
     const [info, setInfo] = useState({})
     
     useEffect (()=>{
-        axios.get(`http://localhost:5005/api/user`)
+        axios.get(`${process.env.REACT_APP_SERVER_URL}/user`)
         .then(detail => {
             setInfo(detail)
             

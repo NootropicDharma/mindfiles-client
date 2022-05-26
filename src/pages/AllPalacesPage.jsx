@@ -8,7 +8,7 @@ console.log(props)
     // const [palaces, setPalaces] = useState([])
 
     // // useEffect(()=>{
-    // //     axios.get("http://localhost:5005/api/user")
+    // //     axios.get(`${process.env.REACT_APP_SERVER_URL}/user`)
     // //     .then(misdatos =>{
     // //         console.log(misdatos.data)
     // //         setPalaces(misdatos.data)

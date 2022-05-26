@@ -24,7 +24,7 @@ import {
 
         //Pidamos al back los palace que existen
         useEffect(() => {
-            axios.get(`http://localhost:5005/api/palacesbyuser/${props.user?._id}`)
+            axios.get(`${process.env.REACT_APP_SERVER_URL}/palacesbyuser/${props.user?._id}`)
             .then( palaces => {
                 setPalaces(palaces.data)
             })
@@ -37,7 +37,7 @@ import {
 
         function handleSubmit(event) {
             console.log({title, Id})
-            axios.post("http://localhost:5005/api/newroom", {title, palaceId: Id}) //como es post recibe un segunto parametro data 
+            axios.post(`${process.env.REACT_APP_SERVER_URL}/newroom`, {title, palaceId: Id}) //como es post recibe un segunto parametro data 
             .then( nuevoProjecto => {
                 navigate('/allpalaces')
             })

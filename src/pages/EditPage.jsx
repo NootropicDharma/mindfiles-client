@@ -21,7 +21,7 @@ export default function EditPage() {
 
     function handleSubmit(event) {
     
-    axios.put(`http://localhost:5005/api/palaces/${id}`, {title, numberOfRooms: rooms}) //como es post recibe un segunto parametro data 
+    axios.put(`${process.env.REACT_APP_SERVER_URL}/palaces/${id}`, {title, numberOfRooms: rooms}) //como es post recibe un segunto parametro data 
         .then( nuevoProjecto => {
         navigate('/allpalaces')
         })
@@ -30,7 +30,7 @@ export default function EditPage() {
 
         useEffect (()=>{
             console.log('obtener datos de', id)
-            axios.get(`http://localhost:5005/api/palaces/${id}`)
+            axios.get(`${process.env.REACT_APP_SERVER_URL}/palaces/${id}`)
             .then(datos =>{
                 setTitle(datos.data.title)
                 setRooms(datos.data.numberOfRooms)

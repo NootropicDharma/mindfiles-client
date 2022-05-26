@@ -44,7 +44,7 @@ const DetailPage = (props) => {
     console.log(props)
     
     useEffect (()=>{
-        axios.get(`http://localhost:5005/api/palaces/${id}`)
+        axios.get(`${process.env.REACT_APP_SERVER_URL}/palaces/${id}`)
         .then(detail => {
             setDatos(detail.data)
             setCargo(true)
@@ -54,7 +54,7 @@ const DetailPage = (props) => {
     },[id]); // because it gets updated everytime 
 
     function handleDelete(){
-      axios.delete(`http://localhost:5005/api/palaces/${id}`)
+      axios.delete(`${process.env.REACT_APP_SERVER_URL}/palaces/${id}`)
         .then(() =>{
         
                 toast({

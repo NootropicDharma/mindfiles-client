@@ -23,7 +23,7 @@ import {
 
     function handleSubmit(event) {
       console.log({title, userId})
-      axios.post("http://localhost:5005/api/userpalacenew", {title, userId: props.user?._id}) //como es post recibe un segunto parametro data 
+      axios.post(`${process.env.REACT_APP_SERVER_URL}/userpalacenew`, {title, userId: props.user?._id}) //como es post recibe un segunto parametro data 
       .then( nuevoProjecto => {
         navigate('/allpalaces')
       })

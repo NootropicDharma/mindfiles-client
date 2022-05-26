@@ -37,7 +37,7 @@ import {
     // para redireccionar , conviertes en una constante 
 
     useEffect(() => {
-        axios.get(`http://localhost:5005/api/palacesbyuser/${props.user?._id}`)
+        axios.get(`${process.env.REACT_APP_SERVER_URL}/palacesbyuser/${props.user?._id}`)
         .then( palaces => {
             setPalaces(palaces.data)
         })
@@ -45,7 +45,7 @@ import {
     }, [])
     
     useEffect (()=>{
-        axios.get(`http://localhost:5005/api/roomsbypalace/${Id}`)
+        axios.get(`${process.env.REACT_APP_SERVER_URL}/roomsbypalace/${Id}`)
         .then(rooms =>{
             setRooms(rooms.data)
         })
@@ -53,7 +53,7 @@ import {
     },[Id])
 
     useEffect (()=>{
-        axios.get(`http://localhost:5005/api/memoriesbyroom/${roomId}`)
+        axios.get(`${process.env.REACT_APP_SERVER_URL}/memoriesbyroom/${roomId}`)
         .then(memories =>{
             setMemories(memories.data)
             
@@ -66,7 +66,7 @@ import {
 
     function handleSubmit(event) {
     // console.log({title,description, roomId})
-      axios.post("http://localhost:5005/api/newroommemory", {BookTitle,Pages,What,Where,When,Who,memoryId: Id}) //como es post recibe un segunto parametro data 
+      axios.post(`${process.env.REACT_APP_SERVER_URL}/newroommemory`, {BookTitle,Pages,What,Where,When,Who,memoryId: Id}) //como es post recibe un segunto parametro data 
     .then( nuevoProjecto => {
         navigate('/allpalaces')
     })
