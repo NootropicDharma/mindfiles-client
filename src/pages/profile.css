@@ -14,9 +14,16 @@
 }
 
 .main {
-    background: url('/public/images/getty_494562134_260336.jpeg') no-repeat center center fixed; 
+    background: url('/public/images/5507262.jpeg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+
+.divi3 {
+    width: 1000px;
+
+
 }

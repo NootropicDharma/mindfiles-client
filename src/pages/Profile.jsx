@@ -36,8 +36,7 @@ const Profile = (props) => {
 
     return (
     <div className='main'>
-        
-        
+
         
         <div className="border">
             <div className='divi'>
@@ -73,18 +72,18 @@ const Profile = (props) => {
                 <Heading fontSize={'2xl'} fontFamily={'body'}>
             
                 </Heading>
-                <Text fontWeight={600} color={'gray.500'} size="sm" mb={4}>
+                <Text fontSize={'3xl'} fontWeight={600} color={'gray.500'} size="sm" mb={4}>
             
                     {props.user?.username}
                 </Text>
-                <Text
+                <Text 
                     textAlign={'center'}
                     color={useColorModeValue('gray.700', 'gray.400')}
                     px={3}>
             
                     <Link href={'#'} color={'blue.400'}>
                     </Link>
-                    {props.user?.bio}
+                    "I have sworn upon the altar of god, eternal hostility against every form of tyranny over the mind of man."
                 </Text>
                 <Stack align={'center'} justify={'center'} direction={'row'} mt={6}>
                     <Badge
@@ -140,71 +139,76 @@ const Profile = (props) => {
                 </Stack>
                 </Center>
             </div>
+            
             <div className='divi2'>
+            
                 <Link to="/new">
             
                 </Link>
                 <Center py={6}>
                 <Stack
-                borderWidth="1px"
+                borderWidth="4px"
                 borderRadius="lg"
-                w={{ sm: '100%', md: '800px' }}
+                w={{ sm: '100%', md: '1200px' }}
                 height={{ sm: '476px', md: '40rem' }}
                 direction={{ base: 'column', md: 'row' }}
-                bg={useColorModeValue('gray', 'gray.900')}
+                bg={useColorModeValue('clear', 'gray.900')}
                 boxShadow={'2xl'}
                 padding={4}>
-            
+                <img src="/images/077-maze.jpeg" alt="hi" />
                 <Stack
                 flex={1}
                 flexDirection="column"
-                justifyContent="center"
+                justifyContent="flex-end"
                 alignItems="center"
                 p={1}
                 pt={2}>
                 <Heading fontSize={'2xl'} fontFamily={'body'}>
-            
+                <Text fontSize={'5xl'} fontWeight={600} color={'orange.100'}>
+                        Palaces
+                </Text>
                 </Heading>
                 <Text fontWeight={600} color={'white.500'} size="sm" mb={4}>
             
-                Gustos y hobbies
+                
                 </Text>
+
                 <Text
                     textAlign={'center'}
                     color={useColorModeValue('white.700', 'white.400')}
                     px={3}>
-                    Datos personales
-                    <Text fontSize={'3xl'} fontWeight={600}   color={'white'}>{props.user?.palaces[0]?.title}</Text>
-                    <Text fontSize={'3xl'} fontWeight={600}  color={'white'}>{props.user?.palaces[1]?.title}</Text>
-                    <Text fontSize={'3xl'} fontWeight={600}  color={'white'}>{props.user?.palaces[2]?.title}</Text>
-                    <Text fontSize={'3xl'} fontWeight={600}  color={'white'}>{props.user?.palaces[3]?.title}</Text>
-                    <Text fontSize={'3xl'} fontWeight={600}  color={'white'}>{props.user?.palaces[4]?.title}</Text>
+                    
+                    <ul>
+                        <li>
+                            <Text fontSize={'3xl'} fontWeight={600}   color={'white'}>{props.user?.palaces[0]?.title}</Text>
+                        </li>
+                        <li>
+                            <Text fontSize={'3xl'} fontWeight={600}  color={'white'}>{props.user?.palaces[1]?.title}</Text>
+                        </li>
+                        <li>
+                            <Text fontSize={'3xl'} fontWeight={600}  color={'white'}>{props.user?.palaces[2]?.title}</Text>
+                        </li>
+                        <li>
+                            <Text fontSize={'3xl'} fontWeight={600}  color={'white'}>{props.user?.palaces[3]?.title}</Text>
+                        </li>
+                        <li>
+                            <Text fontSize={'3xl'} fontWeight={600}  color={'white'}>{props.user?.palaces[4]?.title}</Text>
+                                                
+                        </li>
+                    </ul>
                 </Text>
+                
                 <Stack align={'center'} justify={'center'} direction={'row'} mt={6}>
-                    <Badge
-                    px={2}
-                    py={1}
-                    bg={useColorModeValue('gray.50', 'gray.800')}
-                    fontWeight={'400'}>
-            Libros Favoritos
-                    </Badge>
-                    <Badge
-                    px={2}
-                    py={1}
-                    bg={useColorModeValue('gray.50', 'gray.800')}
-                    fontWeight={'400'}>
-            Memorias Favoritas
-                    </Badge>
                     </Stack>
-                    <Stack
-                    width={'50%'}
-                    mt={'2rem'}
-                    direction={'row'}
-                    padding={2}
-                    justifyContent={'center'}
-                    alignItems={'center'}>
-                    <Linky to="/new"></Linky>
-                    <Linky to="/new">
+                        <Stack
+                        width={'50%'}
+                        mt={'2rem'}
+                        direction={'row'}
+                        padding={2}
+                        justifyContent={'flex-end'}
+                        alignItems={'center'}>
+                        
+                        <Linky to="/new">
                         <Button
                         flex={1}
                         fontSize={'sm'}
@@ -222,12 +226,13 @@ const Profile = (props) => {
                         }}>
                         Create a Place
                         </Button>
-                    </Linky>
-                </Stack>
-                </Stack>
+                        </Linky>
+                        </Stack>
+                    </Stack>
                 </Stack>
                 </Center>
             </div>
+            
         </div>
 
     </div>

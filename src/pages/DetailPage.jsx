@@ -89,7 +89,7 @@ const DetailPage = (props) => {
                 marginLeft={{ base: '0', sm: '5%' }}
                 marginTop="5%">
                 <table>
-          <caption>{user?.palaces[0]?.title}</caption>
+         
 {/* 
         {
           user.user?.map( (info) => {
@@ -111,10 +111,11 @@ const DetailPage = (props) => {
 
           <thead>
             <tr>
-        <th>No.</th>
+        <th></th>
         <th>Room type</th>
         <th>Memory</th>
         <th>Note</th>
+        <th>description</th> 
             </tr>
           </thead>
           <tbody>
@@ -122,124 +123,262 @@ const DetailPage = (props) => {
         <td>1</td>
         <td>{user?.palaces[0]?.rooms[0]?.title}</td>
         <td>
-        {user?.palaces[0]?.rooms[0]?.memories[0]?.title}
-        {user?.palaces[0]?.rooms[0]?.memories[1]?.title}
-        {user?.palaces[0]?.rooms[0]?.memories[2]?.title}
-        {user?.palaces[0]?.rooms[0]?.memories[3]?.title}
-        {user?.palaces[0]?.rooms[0]?.memories[4]?.title}
-        {user?.palaces[0]?.rooms[0]?.memories[5]?.title}
+          <ul>
+            <li>{user?.palaces[0]?.rooms[0]?.memories[0]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[0]?.memories[1]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[0]?.memories[2]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[0]?.memories[3]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[0]?.memories[4]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[0]?.memories[5]?.title}</li>
+          </ul>
         </td>
-        <td>{user?.palaces[0]?.rooms[0]?.memories[0]?.notes[0]}</td>
-        <td></td>
+        <td>
+          {user?.palaces[0]?.rooms[0]?.memories[0]?.notes[0]?.BookTitle}
+        </td>
+        <td>
+          <ul>
+            <li>{user?.palaces[0]?.rooms[0]?.memories[0]?.description}</li>
+            <li>{user?.palaces[0]?.rooms[0]?.memories[1]?.description}</li>
+            <li>{user?.palaces[0]?.rooms[0]?.memories[2]?.description}</li>
+            <li>{user?.palaces[0]?.rooms[0]?.memories[3]?.description}</li>
+            <li>{user?.palaces[0]?.rooms[0]?.memories[4]?.description}</li>
+            <li>{user?.palaces[0]?.rooms[0]?.memories[5]?.description}</li>
+          </ul>
+        </td>
             </tr>
             <tr>
         <td>2</td>
         <td>{user?.palaces[0]?.rooms[1]?.title}</td>
         <td>
-        {user?.palaces[0]?.rooms[1]?.memories[0]?.title}
-        {user?.palaces[0]?.rooms[1]?.memories[1]?.title}
-        {user?.palaces[0]?.rooms[1]?.memories[2]?.title}
-        {user?.palaces[0]?.rooms[1]?.memories[3]?.title}
-        {user?.palaces[0]?.rooms[1]?.memories[4]?.title}
-        {user?.palaces[0]?.rooms[1]?.memories[5]?.title}
+          <ul>
+            <li>{user?.palaces[0]?.rooms[1]?.memories[0]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[1]?.memories[1]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[1]?.memories[2]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[1]?.memories[3]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[1]?.memories[4]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[1]?.memories[5]?.title}</li>
+          </ul>
         </td>
-        <td></td>
+        <td>
+        {user?.palaces[0]?.rooms[1]?.memories[0]?.notes[0]?.BookTitle}</td>
+        <td>
+        <ul>
+          <li>{user?.palaces[0]?.rooms[1]?.memories[0]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[1]?.memories[1]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[1]?.memories[2]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[1]?.memories[3]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[1]?.memories[4]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[1]?.memories[5]?.description}</li>
+        </ul>
+        </td>
             </tr>
             <tr>
         <td>3</td>
         <td>{user?.palaces[0]?.rooms[2]?.title}</td>
-        {user?.palaces[0]?.rooms[2]?.memories[0]?.title}
-        {user?.palaces[0]?.rooms[2]?.memories[1]?.title}
-        {user?.palaces[0]?.rooms[2]?.memories[2]?.title}
-        {user?.palaces[0]?.rooms[2]?.memories[3]?.title}
-        {user?.palaces[0]?.rooms[2]?.memories[4]?.title}
-        {user?.palaces[0]?.rooms[2]?.memories[5]?.title}
-        {/* <td>{user?.palaces[0]?.rooms[2]?.memories[0]?.notes[0]}</td> */}
-        <td></td>
+        <td>
+          <ul>
+            <li>{user?.palaces[0]?.rooms[2]?.memories[0]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[2]?.memories[1]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[2]?.memories[2]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[2]?.memories[3]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[2]?.memories[4]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[2]?.memories[5]?.title}</li>
+          </ul>
+        </td>
+        <td>
+        {user?.palaces[0]?.rooms[1]?.memories[0]?.notes[0]?.BookTitle}</td>
+        <td>
+        <ul>
+          <li>{user?.palaces[0]?.rooms[2]?.memories[0]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[2]?.memories[1]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[2]?.memories[2]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[2]?.memories[3]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[2]?.memories[4]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[2]?.memories[5]?.description}</li>
+        </ul>
+        </td>
             </tr>
             <tr>
         <td>4</td>
         <td>{user?.palaces[0]?.rooms[3]?.title}</td>
-        {user?.palaces[0]?.rooms[3]?.memories[0]?.title}
-        {user?.palaces[0]?.rooms[3]?.memories[1]?.title}
-        {user?.palaces[0]?.rooms[3]?.memories[2]?.title}
-        {user?.palaces[0]?.rooms[3]?.memories[3]?.title}
-        {user?.palaces[0]?.rooms[3]?.memories[4]?.title}
-        {user?.palaces[0]?.rooms[3]?.memories[5]?.title}
-        <td></td>
-        <td></td>
+        <td>
+          <ul>
+            <li>{user?.palaces[0]?.rooms[3]?.memories[0]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[3]?.memories[1]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[3]?.memories[2]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[3]?.memories[3]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[3]?.memories[4]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[3]?.memories[5]?.title}</li>
+          </ul>
+        </td>
+        <td>
+        {user?.palaces[0]?.rooms[1]?.memories[0]?.notes[0]?.BookTitle}</td>
+        <td>
+        <ul>
+          <li>{user?.palaces[0]?.rooms[4]?.memories[0]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[4]?.memories[1]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[4]?.memories[2]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[4]?.memories[3]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[4]?.memories[4]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[4]?.memories[5]?.description}</li>
+        </ul>
+        </td>
             </tr>
             <tr>
         <td>5</td>
         <td>{user?.palaces[0]?.rooms[4]?.title}</td>
-        {user?.palaces[0]?.rooms[4]?.memories[0]?.title}
-        {user?.palaces[0]?.rooms[4]?.memories[1]?.title}
-        {user?.palaces[0]?.rooms[4]?.memories[2]?.title}
-        {user?.palaces[0]?.rooms[4]?.memories[3]?.title}
-        {user?.palaces[0]?.rooms[4]?.memories[4]?.title}
-        {user?.palaces[0]?.rooms[4]?.memories[5]?.title}
-        <td></td>
-        <td></td>
+        <td>
+          <ul>
+            <li>{user?.palaces[0]?.rooms[4]?.memories[0]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[4]?.memories[1]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[4]?.memories[2]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[4]?.memories[3]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[4]?.memories[4]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[4]?.memories[5]?.title}</li>
+          </ul>
+        </td>
+        <td>
+        {user?.palaces[0]?.rooms[4]?.memories[0]?.notes[0]?.BookTitle}</td>
+        <td>
+        <ul>
+          <li>{user?.palaces[0]?.rooms[4]?.memories[0]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[4]?.memories[1]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[4]?.memories[2]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[4]?.memories[3]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[4]?.memories[4]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[4]?.memories[5]?.description}</li>
+        </ul>
+        </td>
             </tr>
             <tr>
         <td>6</td>
         <td>{user?.palaces[0]?.rooms[5]?.title}</td>
-        {user?.palaces[0]?.rooms[5]?.memories[0]?.title}
-        {user?.palaces[0]?.rooms[5]?.memories[1]?.title}
-        {user?.palaces[0]?.rooms[5]?.memories[2]?.title}
-        {user?.palaces[0]?.rooms[5]?.memories[3]?.title}
-        {user?.palaces[0]?.rooms[5]?.memories[4]?.title}
-        {user?.palaces[0]?.rooms[5]?.memories[5]?.title}
-        <td></td>
-        <td></td>
+        <td>
+          <ul>
+            <li>{user?.palaces[0]?.rooms[5]?.memories[0]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[5]?.memories[1]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[5]?.memories[2]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[5]?.memories[3]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[5]?.memories[4]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[5]?.memories[5]?.title}</li>
+          </ul>
+        </td>
+        <td>
+        {user?.palaces[0]?.rooms[5]?.memories[0]?.notes[0]?.BookTitle}</td>
+        <td>
+        <ul>
+          <li>{user?.palaces[0]?.rooms[5]?.memories[0]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[5]?.memories[1]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[5]?.memories[2]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[5]?.memories[3]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[5]?.memories[4]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[5]?.memories[5]?.description}</li>
+        </ul>
+        </td>
             </tr>
             <tr>
         <td>7</td>
         <td>{user?.palaces[0]?.rooms[6]?.title}</td>
-        {user?.palaces[0]?.rooms[6]?.memories[0]?.title}
-        {user?.palaces[0]?.rooms[6]?.memories[1]?.title}
-        {user?.palaces[0]?.rooms[6]?.memories[2]?.title}
-        {user?.palaces[0]?.rooms[6]?.memories[3]?.title}
-        {user?.palaces[0]?.rooms[6]?.memories[4]?.title}
-        {user?.palaces[0]?.rooms[6]?.memories[5]?.title}
-        <td></td>
-        <td></td>
+        <td>
+          <ul>
+            <li>{user?.palaces[0]?.rooms[6]?.memories[0]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[6]?.memories[1]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[6]?.memories[2]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[6]?.memories[3]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[6]?.memories[4]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[6]?.memories[5]?.title}</li>
+          </ul>
+        </td>
+        <td>
+        {user?.palaces[0]?.rooms[6]?.memories[0]?.notes[0]?.BookTitle}</td>
+        <td>
+        <ul>
+          <li>{user?.palaces[0]?.rooms[6]?.memories[0]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[6]?.memories[1]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[6]?.memories[2]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[6]?.memories[3]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[6]?.memories[4]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[6]?.memories[5]?.description}</li>
+        </ul>
+        </td>
             </tr>
             <tr>
         <td>8</td>
         <td>{user?.palaces[0]?.rooms[7]?.title}</td>
-        {user?.palaces[0]?.rooms[7]?.memories[0]?.title}
-        {user?.palaces[0]?.rooms[7]?.memories[1]?.title}
-        {user?.palaces[0]?.rooms[7]?.memories[2]?.title}
-        {user?.palaces[0]?.rooms[7]?.memories[3]?.title}
-        {user?.palaces[0]?.rooms[7]?.memories[4]?.title}
-        {user?.palaces[0]?.rooms[7]?.memories[5]?.title}
-        <td></td>
-        <td></td>
+        <td>
+          <ul>
+            <li>{user?.palaces[0]?.rooms[7]?.memories[0]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[7]?.memories[1]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[7]?.memories[2]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[7]?.memories[3]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[7]?.memories[4]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[7]?.memories[5]?.title}</li>
+          </ul>
+        </td>
+        <td>
+        {user?.palaces[0]?.rooms[7]?.memories[0]?.notes[0]?.BookTitle}</td>
+        <td>
+        <ul>
+          <li>{user?.palaces[0]?.rooms[7]?.memories[0]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[7]?.memories[1]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[7]?.memories[2]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[7]?.memories[3]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[7]?.memories[4]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[7]?.memories[5]?.description}</li>
+        </ul>
+        </td>
             </tr>
             <tr>
         <td>9</td>
         <td>{user?.palaces[0]?.rooms[8]?.title}</td>
-        {user?.palaces[0]?.rooms[8]?.memories[0]?.title}
-        {user?.palaces[0]?.rooms[8]?.memories[1]?.title}
-        {user?.palaces[0]?.rooms[8]?.memories[2]?.title}
-        {user?.palaces[0]?.rooms[8]?.memories[3]?.title}
-        {user?.palaces[0]?.rooms[8]?.memories[4]?.title}
-        {user?.palaces[0]?.rooms[8]?.memories[5]?.title}
-        <td></td>
-        <td></td>
+        <td>
+          <ul>
+            <li>{user?.palaces[0]?.rooms[8]?.memories[0]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[8]?.memories[1]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[8]?.memories[2]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[8]?.memories[3]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[8]?.memories[4]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[8]?.memories[5]?.title}</li>
+          </ul>
+        </td>
+        <td>
+        {user?.palaces[0]?.rooms[8]?.memories[0]?.notes[0]?.BookTitle}</td>
+        <td>
+        <ul>
+          <li>{user?.palaces[0]?.rooms[8]?.memories[0]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[8]?.memories[1]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[8]?.memories[2]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[8]?.memories[3]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[8]?.memories[4]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[8]?.memories[5]?.description}</li>
+        </ul>
+        </td>
             </tr>
             <tr>
         <td>10</td>
         <td>{user?.palaces[0]?.rooms[9]?.title}</td>
-        {user?.palaces[0]?.rooms[9]?.memories[0]?.title}
-        {user?.palaces[0]?.rooms[9]?.memories[1]?.title}
-        {user?.palaces[0]?.rooms[9]?.memories[2]?.title}
-        {user?.palaces[0]?.rooms[9]?.memories[3]?.title}
-        {user?.palaces[0]?.rooms[9]?.memories[4]?.title}
-        {user?.palaces[0]?.rooms[9]?.memories[5]?.title}
-        <td></td>
-        <td></td>
+        <td>
+          <ul>
+            <li>{user?.palaces[0]?.rooms[9]?.memories[0]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[9]?.memories[1]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[9]?.memories[2]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[9]?.memories[3]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[9]?.memories[4]?.title}</li>
+            <li>{user?.palaces[0]?.rooms[9]?.memories[5]?.title}</li>
+          </ul>
+        </td>
+        <td>
+        {user?.palaces[0]?.rooms[9]?.memories[0]?.notes[0]?.BookTitle}</td>
+        <td>
+        <ul>
+          <li>{user?.palaces[0]?.rooms[9]?.memories[0]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[9]?.memories[1]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[9]?.memories[2]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[9]?.memories[3]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[9]?.memories[4]?.description}</li>
+          <li>{user?.palaces[0]?.rooms[9]?.memories[5]?.description}</li>
+        </ul>
+        </td>
             </tr>
           </tbody>
           
@@ -267,7 +406,7 @@ const DetailPage = (props) => {
                   <Heading marginTop="1">
                     <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                     {datos.title}
-                    rooms 
+                    
                     </Link>
                   </Heading>
                   <Text
