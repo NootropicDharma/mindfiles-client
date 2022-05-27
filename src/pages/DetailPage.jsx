@@ -133,7 +133,16 @@ const DetailPage = (props) => {
           </ul>
         </td>
         <td>
-          {user?.palaces[0]?.rooms[0]?.memories[0]?.notes[0]?.BookTitle}
+          <ol>
+            <li>{user?.palaces[0]?.rooms[0]?.memories[0]?.notes[0]?.BookTitle}</li>
+          </ol>
+                {user?.palaces[0]?.rooms[0]?.memories[0]?.notes[0]?.Pages}
+            <ul>
+              <li>{user?.palaces[0]?.rooms[0]?.memories[0]?.notes[0]?.What}</li>
+              <li>{user?.palaces[0]?.rooms[0]?.memories[0]?.notes[0]?.Where}</li>
+              <li>{user?.palaces[0]?.rooms[0]?.memories[0]?.notes[0]?.When}</li>
+              <li>{user?.palaces[0]?.rooms[0]?.memories[0]?.notes[0]?.Who}</li>
+            </ul>
         </td>
         <td>
           <ul>
@@ -160,7 +169,19 @@ const DetailPage = (props) => {
           </ul>
         </td>
         <td>
-        {user?.palaces[0]?.rooms[1]?.memories[0]?.notes[0]?.BookTitle}</td>
+          <ol>
+            <span>
+              <li>{user?.palaces[0]?.rooms[1]?.memories[0]?.notes[0]?.BookTitle}</li>
+            </span>
+          </ol>
+                {user?.palaces[0]?.rooms[1]?.memories[0]?.notes[0]?.Pages}
+            <ul>
+              <li>{user?.palaces[0]?.rooms[1]?.memories[0]?.notes[0]?.What}</li>
+              <li>{user?.palaces[0]?.rooms[1]?.memories[0]?.notes[0]?.Where}</li>
+              <li>{user?.palaces[0]?.rooms[1]?.memories[0]?.notes[0]?.When}</li>
+              <li>{user?.palaces[0]?.rooms[1]?.memories[0]?.notes[0]?.Who}</li>
+            </ul>
+        </td>
         <td>
         <ul>
           <li>{user?.palaces[0]?.rooms[1]?.memories[0]?.description}</li>
@@ -186,7 +207,19 @@ const DetailPage = (props) => {
           </ul>
         </td>
         <td>
-        {user?.palaces[0]?.rooms[1]?.memories[0]?.notes[0]?.BookTitle}</td>
+          <ol>
+            <span>
+              <li>{user?.palaces[0]?.rooms[2]?.memories[0]?.notes[0]?.BookTitle}</li>
+            </span>
+          </ol>
+                {user?.palaces[0]?.rooms[2]?.memories[0]?.notes[0]?.Pages}
+            <ul>
+              <li>{user?.palaces[0]?.rooms[2]?.memories[0]?.notes[0]?.What}</li>
+              <li>{user?.palaces[0]?.rooms[2]?.memories[0]?.notes[0]?.Where}</li>
+              <li>{user?.palaces[0]?.rooms[2]?.memories[0]?.notes[0]?.When}</li>
+              <li>{user?.palaces[0]?.rooms[2]?.memories[0]?.notes[0]?.Who}</li>
+            </ul>
+        </td>
         <td>
         <ul>
           <li>{user?.palaces[0]?.rooms[2]?.memories[0]?.description}</li>
@@ -212,7 +245,19 @@ const DetailPage = (props) => {
           </ul>
         </td>
         <td>
-        {user?.palaces[0]?.rooms[1]?.memories[0]?.notes[0]?.BookTitle}</td>
+          <ol>
+            <span>
+              <li>{user?.palaces[0]?.rooms[3]?.memories[0]?.notes[0]?.BookTitle}</li>
+            </span>
+          </ol>
+                {user?.palaces[0]?.rooms[3]?.memories[0]?.notes[0]?.Pages}
+            <ul>
+              <li>{user?.palaces[0]?.rooms[3]?.memories[0]?.notes[0]?.What}</li>
+              <li>{user?.palaces[0]?.rooms[3]?.memories[0]?.notes[0]?.Where}</li>
+              <li>{user?.palaces[0]?.rooms[3]?.memories[0]?.notes[0]?.When}</li>
+              <li>{user?.palaces[0]?.rooms[3]?.memories[0]?.notes[0]?.Who}</li>
+            </ul>
+        </td>
         <td>
         <ul>
           <li>{user?.palaces[0]?.rooms[4]?.memories[0]?.description}</li>
@@ -238,7 +283,19 @@ const DetailPage = (props) => {
           </ul>
         </td>
         <td>
-        {user?.palaces[0]?.rooms[4]?.memories[0]?.notes[0]?.BookTitle}</td>
+          <ol>
+            <span>
+              <li>{user?.palaces[0]?.rooms[4]?.memories[0]?.notes[0]?.BookTitle}</li>
+            </span>
+          </ol>
+                {user?.palaces[0]?.rooms[4]?.memories[0]?.notes[0]?.Pages}
+            <ul>
+              <li>{user?.palaces[0]?.rooms[4]?.memories[0]?.notes[0]?.What}</li>
+              <li>{user?.palaces[0]?.rooms[4]?.memories[0]?.notes[0]?.Where}</li>
+              <li>{user?.palaces[0]?.rooms[4]?.memories[0]?.notes[0]?.When}</li>
+              <li>{user?.palaces[0]?.rooms[4]?.memories[0]?.notes[0]?.Who}</li>
+            </ul>
+        </td>
         <td>
         <ul>
           <li>{user?.palaces[0]?.rooms[4]?.memories[0]?.description}</li>
@@ -264,7 +321,19 @@ const DetailPage = (props) => {
           </ul>
         </td>
         <td>
-        {user?.palaces[0]?.rooms[5]?.memories[0]?.notes[0]?.BookTitle}</td>
+          <ol>
+            <span>
+              <li>{user?.palaces[0]?.rooms[5]?.memories[0]?.notes[0]?.BookTitle}</li>
+            </span>
+          </ol>
+                {user?.palaces[0]?.rooms[5]?.memories[0]?.notes[0]?.Pages}
+            <ul>
+              <li>{user?.palaces[0]?.rooms[5]?.memories[0]?.notes[0]?.What}</li>
+              <li>{user?.palaces[0]?.rooms[5]?.memories[0]?.notes[0]?.Where}</li>
+              <li>{user?.palaces[0]?.rooms[5]?.memories[0]?.notes[0]?.When}</li>
+              <li>{user?.palaces[0]?.rooms[5]?.memories[0]?.notes[0]?.Who}</li>
+            </ul>
+        </td>
         <td>
         <ul>
           <li>{user?.palaces[0]?.rooms[5]?.memories[0]?.description}</li>
@@ -290,7 +359,19 @@ const DetailPage = (props) => {
           </ul>
         </td>
         <td>
-        {user?.palaces[0]?.rooms[6]?.memories[0]?.notes[0]?.BookTitle}</td>
+          <ol>
+            <span>
+              <li>{user?.palaces[0]?.rooms[6]?.memories[0]?.notes[0]?.BookTitle}</li>
+            </span>
+          </ol>
+                {user?.palaces[0]?.rooms[6]?.memories[0]?.notes[0]?.Pages}
+            <ul>
+              <li>{user?.palaces[0]?.rooms[6]?.memories[0]?.notes[0]?.What}</li>
+              <li>{user?.palaces[0]?.rooms[6]?.memories[0]?.notes[0]?.Where}</li>
+              <li>{user?.palaces[0]?.rooms[6]?.memories[0]?.notes[0]?.When}</li>
+              <li>{user?.palaces[0]?.rooms[6]?.memories[0]?.notes[0]?.Who}</li>
+            </ul>
+        </td>
         <td>
         <ul>
           <li>{user?.palaces[0]?.rooms[6]?.memories[0]?.description}</li>
@@ -316,7 +397,19 @@ const DetailPage = (props) => {
           </ul>
         </td>
         <td>
-        {user?.palaces[0]?.rooms[7]?.memories[0]?.notes[0]?.BookTitle}</td>
+          <ol>
+            <span>
+              <li>{user?.palaces[0]?.rooms[7]?.memories[0]?.notes[0]?.BookTitle}</li>
+            </span>
+          </ol>
+                {user?.palaces[0]?.rooms[7]?.memories[0]?.notes[0]?.Pages}
+            <ul>
+              <li>{user?.palaces[0]?.rooms[7]?.memories[0]?.notes[0]?.What}</li>
+              <li>{user?.palaces[0]?.rooms[7]?.memories[0]?.notes[0]?.Where}</li>
+              <li>{user?.palaces[0]?.rooms[7]?.memories[0]?.notes[0]?.When}</li>
+              <li>{user?.palaces[0]?.rooms[7]?.memories[0]?.notes[0]?.Who}</li>
+            </ul>
+        </td>
         <td>
         <ul>
           <li>{user?.palaces[0]?.rooms[7]?.memories[0]?.description}</li>
@@ -342,7 +435,19 @@ const DetailPage = (props) => {
           </ul>
         </td>
         <td>
-        {user?.palaces[0]?.rooms[8]?.memories[0]?.notes[0]?.BookTitle}</td>
+          <ol>
+            <span>
+              <li>{user?.palaces[0]?.rooms[8]?.memories[0]?.notes[0]?.BookTitle}</li>
+            </span>
+          </ol>
+                {user?.palaces[0]?.rooms[8]?.memories[0]?.notes[0]?.Pages}
+            <ul>
+              <li>{user?.palaces[0]?.rooms[8]?.memories[0]?.notes[0]?.What}</li>
+              <li>{user?.palaces[0]?.rooms[8]?.memories[0]?.notes[0]?.Where}</li>
+              <li>{user?.palaces[0]?.rooms[8]?.memories[0]?.notes[0]?.When}</li>
+              <li>{user?.palaces[0]?.rooms[8]?.memories[0]?.notes[0]?.Who}</li>
+            </ul>
+        </td>
         <td>
         <ul>
           <li>{user?.palaces[0]?.rooms[8]?.memories[0]?.description}</li>
@@ -368,7 +473,19 @@ const DetailPage = (props) => {
           </ul>
         </td>
         <td>
-        {user?.palaces[0]?.rooms[9]?.memories[0]?.notes[0]?.BookTitle}</td>
+          <ol>
+            <span>
+              <li>{user?.palaces[0]?.rooms[9]?.memories[0]?.notes[0]?.BookTitle}</li>
+            </span>
+          </ol>
+                {user?.palaces[0]?.rooms[9]?.memories[0]?.notes[0]?.Pages}
+            <ul>
+              <li>{user?.palaces[0]?.rooms[9]?.memories[0]?.notes[0]?.What}</li>
+              <li>{user?.palaces[0]?.rooms[9]?.memories[0]?.notes[0]?.Where}</li>
+              <li>{user?.palaces[0]?.rooms[9]?.memories[0]?.notes[0]?.When}</li>
+              <li>{user?.palaces[0]?.rooms[9]?.memories[0]?.notes[0]?.Who}</li>
+            </ul>
+        </td>
         <td>
         <ul>
           <li>{user?.palaces[0]?.rooms[9]?.memories[0]?.description}</li>

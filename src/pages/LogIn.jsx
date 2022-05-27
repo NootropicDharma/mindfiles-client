@@ -91,7 +91,7 @@ export default function LogIn({ authenticate }) {
                     <Input  placeholder="username" id="input-username"
                   type="text"
                   name="username"
-                  color="purple.300"
+                  color="yellow.300"
                   value={username}
                   onChange={handleInputChange}
                 required />
@@ -113,7 +113,7 @@ export default function LogIn({ authenticate }) {
                     onChange={handleInputChange}
                     required
                     minLength="8"
-                    color="purple.300"
+                    color="yellow.300"
       
       
                     />

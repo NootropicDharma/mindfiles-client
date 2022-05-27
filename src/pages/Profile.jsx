@@ -155,7 +155,7 @@ const Profile = (props) => {
                 bg={useColorModeValue('clear', 'gray.900')}
                 boxShadow={'2xl'}
                 padding={4}>
-                <img src="/images/077-maze.jpeg" alt="hi" />
+                <img src="/images/Memory+Palace+Example.png" alt="hi" />
                 <Stack
                 flex={1}
                 flexDirection="column"

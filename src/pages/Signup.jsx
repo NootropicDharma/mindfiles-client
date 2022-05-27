@@ -130,7 +130,7 @@ export default function Signup({ authenticate }) {
                     <Input  placeholder="username" id="input-username"
                   type="text"
                   name="username"
-                  color="purple.400"
+                  color="yellow.300"
                   value={username}
                   onChange={handleInputChange}
                 required />
@@ -148,7 +148,7 @@ export default function Signup({ authenticate }) {
                     type="password"
                     name="password"
                     placeholder="Password"
-                    color="gray.400"
+                    color="yellow.300"
                     value={password}
                     onChange={handleInputChange}
                     required
